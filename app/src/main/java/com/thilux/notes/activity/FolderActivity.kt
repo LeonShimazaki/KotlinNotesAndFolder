@@ -18,7 +18,7 @@ class FolderActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_note)
+        setContentView(R.layout.activity_folder)
 
         if (intent.hasExtra(EXTRA_FIELD_NOTE)){
             textNoteLayoutTitle.text = getText(R.string.activity_note_activity_title_update)
@@ -27,7 +27,7 @@ class FolderActivity : AppCompatActivity(), View.OnClickListener {
             val data: Bundle = intent.extras
             existingNote = data.getParcelable<Note>(EXTRA_FIELD_NOTE)
             editNoteTitle.setText(existingNote?.title, TextView.BufferType.EDITABLE)
-            editNoteContent.setText(existingNote?.content, TextView.BufferType.EDITABLE)
+            editNoteContent.setText("")
         }
 
         buttonNoteAddUpdate.setOnClickListener(this)
@@ -50,7 +50,7 @@ class FolderActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun createNote(){
-        val newNote = Note(0, editNoteTitle.text.toString(), editNoteContent.text.toString())
+        val newNote = Note(0, editNoteTitle.text.toString(), "")
         NoteRepository(this).create(newNote)
     }
 

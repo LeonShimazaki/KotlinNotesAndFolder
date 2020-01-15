@@ -59,7 +59,16 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.5"
                 android:text="@string/label_button_delete_note" />
+
+            <Button
+                android:id="@+id/buttonFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/education"
+                android:text="folder" />
         </LinearLayout>
+
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

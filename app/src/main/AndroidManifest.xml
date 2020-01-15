@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".activity.NoteActivity"></activity>
         <activity android:name=".activity.FolderActivity"></activity>
+        <activity android:name=".activity.FolderListActivity"></activity>
     </application>
 
 </manifest>

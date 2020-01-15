@@ -11,7 +11,7 @@ import com.thilux.notes.model.Note
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.notes_list_item.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class FolderListActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

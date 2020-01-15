@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteX="5dp">
 
         <TextView
-            android:id="@+id/textFolderTitle"
+            android:id="@+id/textNotesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -30,7 +30,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/folderUpdate"
+                android:id="@+id/noteUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textNoteContent"
@@ -41,7 +41,7 @@
                 android:text="@string/label_button_update_note" />
 
             <Button
-                android:id="@+id/folderDelete"
+                android:id="@+id/noteDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -51,7 +51,7 @@
                 android:text="@string/label_button_delete_note" />
 
             <ImageButton
-                android:id="@+id/folder"
+                android:id="@+id/folder2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"

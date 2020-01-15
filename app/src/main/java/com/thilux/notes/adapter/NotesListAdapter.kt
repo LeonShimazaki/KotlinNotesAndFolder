@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import com.thilux.notes.R
+import com.thilux.notes.listener.FolderItemUpdateClickListener
 import com.thilux.notes.listener.NoteItemDeleteClickListener
 import com.thilux.notes.listener.NoteItemUpdateClickListener
 import com.thilux.notes.model.Note
@@ -23,12 +25,14 @@ class NotesListAdapter(private var activity: Activity, private var values: Array
         var textNoteContent: TextView? = null
         var buttonUpdate: Button? = null
         var buttonDelete: Button? = null
+        var buttonFolder: Button? = null
 
         init {
             this.textNoteTitle = row?.findViewById<TextView>(R.id.textNoteTitle)
             this.textNoteContent = row?.findViewById<TextView>(R.id.textNoteContent)
             this.buttonUpdate = row?.findViewById<Button>(R.id.buttonUpdate)
             this.buttonDelete = row?.findViewById<Button>(R.id.buttonDelete)
+            this.buttonFolder = row?.findViewById<Button>(R.id.buttonFolder)
         }
     }
 
@@ -52,6 +56,7 @@ class NotesListAdapter(private var activity: Activity, private var values: Array
         viewHolder.textNoteContent?.text = note.content
         viewHolder.buttonUpdate?.setOnClickListener(NoteItemUpdateClickListener(note, activity))
         viewHolder.buttonDelete?.setOnClickListener(NoteItemDeleteClickListener(note, activity))
+        viewHolder.buttonFolder?.setOnClickListener(FolderItemUpdateClickListener(note, activity))
 
         return view as View
 

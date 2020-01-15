@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textFolderLayoutTitle"
+            android:id="@+id/textNoteLayoutTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -23,10 +23,10 @@
             android:textSize="26sp" />
 
         <EditText
-            android:id="@+id/editFolderTitle"
+            android:id="@+id/editNoteTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textFolderLayoutTitle"
+            android:layout_below="@+id/textNoteLayoutTitle"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
             android:layout_marginRight="15dp"
@@ -39,14 +39,14 @@
             android:id="@+id/layoutNoteActions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editFolderTitle"
+            android:layout_below="@+id/editNoteTitle"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="19dp"
             android:layout_marginRight="15dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonFolderAddUpdate"
+                android:id="@+id/buttonNoteAddUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
