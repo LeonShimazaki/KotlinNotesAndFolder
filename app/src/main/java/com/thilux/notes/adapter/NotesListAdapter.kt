@@ -25,14 +25,14 @@ class NotesListAdapter(private var activity: Activity, private var values: Array
         var textNoteContent: TextView? = null
         var buttonUpdate: Button? = null
         var buttonDelete: Button? = null
-        var buttonFolder: Button? = null
+        var buttonFolder: ImageButton? = null
 
         init {
             this.textNoteTitle = row?.findViewById<TextView>(R.id.textNoteTitle)
             this.textNoteContent = row?.findViewById<TextView>(R.id.textNoteContent)
             this.buttonUpdate = row?.findViewById<Button>(R.id.buttonUpdate)
             this.buttonDelete = row?.findViewById<Button>(R.id.buttonDelete)
-            this.buttonFolder = row?.findViewById<Button>(R.id.buttonFolder)
+            this.buttonFolder = row?.findViewById<ImageButton>(R.id.buttonFolder)
         }
     }
 

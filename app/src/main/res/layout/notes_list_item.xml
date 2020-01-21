@@ -60,7 +60,7 @@
                 android:layout_weight="0.5"
                 android:text="@string/label_button_delete_note" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/buttonFolder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

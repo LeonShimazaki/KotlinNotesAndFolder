@@ -36,7 +36,7 @@
         </LinearLayout>
 
         <ListView
-            android:id="@+id/listFolders"
+            android:id="@+id/listNotes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/layoutButtonArea"

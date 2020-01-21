@@ -57,6 +57,6 @@
             android:layout_weight="1"
             android:background="@drawable/border"
             android:longClickable="false"
-            tools:listitem="@layout/notes_list_item" />
+            tools:listitem="@layout/folders_list_item" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

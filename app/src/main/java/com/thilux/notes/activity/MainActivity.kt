@@ -21,11 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         buttonAddNote.setOnClickListener(this)
 
         buttonAddFolder.setOnClickListener(this)
-
     }
-
-
-
 
     fun loadNotes() {
         var notes = NoteRepository(this).findAll()

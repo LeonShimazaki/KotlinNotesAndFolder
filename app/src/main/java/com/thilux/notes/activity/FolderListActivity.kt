@@ -15,17 +15,9 @@ class FolderListActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
         loadNotes()
-
-        buttonAddNote.setOnClickListener(this)
-
-        buttonAddFolder.setOnClickListener(this)
-
     }
-
-
-
 
     fun loadNotes() {
         var notes = NoteRepository(this).findAll()
@@ -36,17 +28,9 @@ class FolderListActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onResume() {
         super.onResume()
-        loadNotes()
+
     }
 
     override fun onClick(view: View) {
-        if (view == buttonAddNote){
-            val intent = Intent(this, NoteActivity::class.java)
-            startActivity(intent)
-        }
-        if (view == buttonAddFolder){
-            val intent = Intent(this, FolderActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

@@ -10,56 +10,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        tools:layout_editor_absoluteX="5dp">
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textNotesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="160dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="160dp"
             android:text="TextView"
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:id="@+id/layoutNoteItemButtonArea"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/buttonFolder"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textNoteContent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/noteUpdate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textNoteContent"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="0.5"
-                android:text="@string/label_button_update_note" />
-
-            <Button
-                android:id="@+id/noteDelete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="0.5"
-                android:text="@string/label_button_delete_note" />
-
-            <ImageButton
-                android:id="@+id/folder2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/education" />
-
-
-        </LinearLayout>
-
+            android:layout_below="@+id/textNotesTitle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/education" />
 
     </RelativeLayout>
 
